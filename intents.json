@@ -1,0 +1,145 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "AppFees",
+        "samples": [
+          "Application fees in {CollegeN}",
+          "App fees in {CollegeN}"
+        ],
+        "slots": [
+          {
+            "name": "CollegeN",
+            "type": "AMAZON.EducationalOrganization"
+          }
+        ]
+      },
+      {
+        "name": "CollegeLocation",
+        "samples": [
+          "Where is {CollegeNB}"
+        ],
+        "slots": [
+          {
+            "name": "CollegeNB",
+            "type": "AMAZON.EducationalOrganization"
+          }
+        ]
+      },
+      {
+        "name": "CourseFees",
+        "samples": [
+          "Course fees in {CollegeNC}",
+          "What is the course fees in {CollegeNC}",
+          "whats the course fees in {CollegeNC}",
+          "Yearly fees in {CollegeNC}",
+          "Cost in {CollegeNC}"
+        ],
+        "slots": [
+          {
+            "name": "CollegeNC",
+            "type": "AMAZON.EducationalOrganization"
+          }
+        ]
+      },
+      {
+        "name": "CourseType",
+        "samples": [
+          "What is {CourseName}"
+        ],
+        "slots": [
+          {
+            "name": "CourseName",
+            "type": "AMAZON.EducationalOrganization"
+          }
+        ]
+      },
+      {
+        "name": "DeadLine",
+        "samples": [
+          "Application deadline for {CollegeNE}"
+        ],
+        "slots": [
+          {
+            "name": "CollegeNE",
+            "type": "AMAZON.EducationalOrganization"
+          }
+        ]
+      },
+      {
+        "name": "ListCollegebyState",
+        "samples": [
+          "Colleges in {USState}",
+          "List Colleges in {USState}"
+        ],
+        "slots": [
+          {
+            "name": "USState",
+            "type": "AMAZON.US_STATE"
+          }
+        ]
+      },
+      {
+        "name": "ListOnlineCollege",
+        "samples": [
+          "List Top {Rank} Online Colleges"
+        ],
+        "slots": [
+          {
+            "name": "Rank",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "ListRegularCollege",
+        "samples": [
+          "List Top {myRegRank} Colleges"
+        ],
+        "slots": [
+          {
+            "name": "myRegRank",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "TopOnlineCollege",
+        "samples": [
+          "Top {myCollegeRank} Online College"
+        ],
+        "slots": [
+          {
+            "name": "myCollegeRank",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "TopRegularCollege",
+        "samples": [
+          "Top {myRgRank} College"
+        ],
+        "slots": [
+          {
+            "name": "myRgRank",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      }
+    ],
+    "invocationName": "college information"
+  }
+}
